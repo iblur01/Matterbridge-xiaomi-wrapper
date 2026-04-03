@@ -1,9 +1,9 @@
 {
-  "name": "matterbridge-plugin-template",
+  "name": "matterbridge-xiaomi-wrapper",
   "version": "1.0.14",
-  "description": "Matterbridge Template Plugin",
-  "author": "https://github.com/Luligu",
-  "homepage": "https://www.npmjs.com/package/matterbridge-plugin-template",
+  "description": "Matterbridge Xiaomi Wrapper Plugin",
+  "author": "https://github.com/iblur01",
+  "homepage": "https://github.com/theo-delannoy/matterbridge-xiaomi-wrapper",
   "license": "Apache-2.0",
   "private": true,
   "type": "module",
@@ -64,7 +64,7 @@
     "*.schema.json"
   ],
   "scripts": {
-    "start": "matterbridge",
+    "start": "matterbridge --childbridge",
     "build": "tsc --project tsconfig.build.json",
     "buildProduction": "tsc --project tsconfig.build.production.json",
     "clean": "npx shx rm -rf *.tsbuildinfo dist",

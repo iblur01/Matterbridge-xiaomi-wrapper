@@ -1,0 +1,8 @@
+{
+  "name": "matterbridge-xiaomi-wrapper",
+  "type": "AccessoryPlatform",
+  "whiteList": [],
+  "blackList": [],
+  "debug": false,
+  "unregisterOnShutdown": false
+}
