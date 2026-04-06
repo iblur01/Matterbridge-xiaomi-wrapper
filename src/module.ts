@@ -12,11 +12,11 @@ import { AnsiLogger, LogLevel } from 'matterbridge/logger';
 import { XiaomiVacuumService } from './xiaomiService.js';
 import { DreameVacuumClient, Session, VacuumState, CleanMode, VacuumErrorCode } from '@mibridge/core';
 
-export default function initializePlugin(matterbridge: PlatformMatterbridge, log: AnsiLogger, config: PlatformConfig): XiaomiWrapperPlatform {
-  return new XiaomiWrapperPlatform(matterbridge, log, config);
+export default function initializePlugin(matterbridge: PlatformMatterbridge, log: AnsiLogger, config: PlatformConfig): MibridgePlatform {
+  return new MibridgePlatform(matterbridge, log, config);
 }
 
-export class XiaomiWrapperPlatform extends MatterbridgeAccessoryPlatform {
+export class MibridgePlatform extends MatterbridgeAccessoryPlatform {
   private xiaomiService: XiaomiVacuumService | null = null;
   private vacuumClients: Map<string, DreameVacuumClient> = new Map();
   private verbose = false;
@@ -29,7 +29,7 @@ export class XiaomiWrapperPlatform extends MatterbridgeAccessoryPlatform {
     }
 
     this.verbose = config.verbose === true;
-    this.log.info(`Initializing Xiaomi Wrapper Platform... ${this.verbose ? '(Verbose Mode Enabled)' : ''}`);
+    this.log.info(`Initializing MiBridge Platform... ${this.verbose ? '(Verbose Mode Enabled)' : ''}`);
   }
 
   override async onStart(reason?: string) {
