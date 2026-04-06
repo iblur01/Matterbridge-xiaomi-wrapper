@@ -1,6 +1,6 @@
 {
-  "title": "Matterbridge Xiaomi Wrapper",
-  "description": "matterbridge-xiaomi-wrapper by Théo DELANNOY",
+  "title": "Matterbridge MiBridge",
+  "description": "matterbridge-mibridge by iblur01",
   "type": "object",
   "properties": {
     "name": {
