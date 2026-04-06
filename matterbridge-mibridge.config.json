@@ -1,5 +1,5 @@
 {
-  "name": "matterbridge-xiaomi-wrapper",
+  "name": "matterbridge-mibridge",
   "type": "AccessoryPlatform",
   "whiteList": [],
   "blackList": [],
