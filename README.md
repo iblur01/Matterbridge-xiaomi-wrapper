@@ -121,4 +121,21 @@ Dev containers have networking limitations depending on the host OS and Docker s
 
 Refer to the Matterbridge [documentation](https://matterbridge.io) for other guidelines.
 
+## Xiaomi Cloud login from Matterbridge frontend
+
+This plugin supports an interactive Xiaomi auth flow directly in the plugin config UI using action buttons.
+
+1. Open Matterbridge frontend → Plugins → `matterbridge-xiaomi-wrapper` → Config.
+2. Fill `Xiaomi Username` and `Xiaomi Password`.
+3. Click **Step 1: Xiaomi Login / Send OTP**.
+4. If Xiaomi requires 2FA, fill `Xiaomi OTP Code`.
+5. Click **Step 2: Verify OTP**.
+6. Restart the plugin when prompted.
+
+When successful, the plugin writes the retrieved Xiaomi Cloud session into `session` automatically.
+
+Security note:
+- The plugin clears `xiaomiAuthPassword` after successful login.
+- The plugin clears `xiaomiAuthOtpCode` and temporary OTP metadata after verification.
+
 ---

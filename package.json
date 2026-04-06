@@ -120,6 +120,7 @@
     "matterbridge:list": "matterbridge -list"
   },
   "dependencies": {
+    "@mibridge/core": "latest",
     "node-ansi-logger": "3.2.0",
     "node-persist-manager": "2.0.1"
   },
