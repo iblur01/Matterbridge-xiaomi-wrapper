@@ -125,7 +125,7 @@ Refer to the Matterbridge [documentation](https://matterbridge.io) for other gui
 
 This plugin supports an interactive Xiaomi auth flow directly in the plugin config UI using action buttons.
 
-1. Open Matterbridge frontend → Plugins → `matterbridge-xiaomi-wrapper` → Config.
+1. Open Matterbridge frontend → Plugins → `matterbridge-mibridge` → Config.
 2. Fill `Xiaomi Username` and `Xiaomi Password`.
 3. Click **Step 1: Xiaomi Login / Send OTP**.
 4. If Xiaomi requires 2FA, fill `Xiaomi OTP Code`.

@@ -1,5 +1,5 @@
 {
-  "name": "matterbridge-xiaomi-wrapper",
+  "name": "matterbridge-mibridge",
   "type": "AccessoryPlatform",
   "session": {
     "userId": "YOUR_XIAOMI_USER_ID",
